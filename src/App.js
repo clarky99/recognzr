@@ -10,8 +10,7 @@ import Clarifai from 'clarifai';
 import SignIn from './components/SignIn/SignIn'
 import Register from './components/Register/Register';
 
-// "a403429f2ddf4b49b307e318f00e528b"
-const clarifApiKey = '2cbc68632412462386c2f0535a675874';
+const clarifApiKey = process.env.REACT_APP_CLARIFAI_KEY;
 const app = new Clarifai.App({
   apiKey: clarifApiKey
 })
